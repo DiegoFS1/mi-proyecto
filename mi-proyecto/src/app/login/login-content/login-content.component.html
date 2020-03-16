@@ -1,0 +1,23 @@
+<div class="container h-100">
+    <form class="row login-form h-100" [formGroup]="loginForm" (ngSubmit)="login()">
+        <div class="col-12">
+            <div class="row justify-content-md-center ">
+                <div class="col col-lg-3">
+                    <label>Email:</label>
+                    <input type="text" formControlName="email">
+                </div>
+            </div>
+            <div class="row justify-content-md-center">
+                <div class="col col-lg-3">
+                    <label>Password:</label>
+                    <input type="password" formControlName="password">
+                </div>
+            </div>
+            <div class="row justify-content-md-center">
+                <div class="col col-lg-3">
+                    <button type="submit">Login</button>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
